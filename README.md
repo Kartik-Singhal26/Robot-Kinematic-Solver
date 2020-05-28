@@ -1,5 +1,5 @@
 # Kinematic-Solver
-This project is a Kinematic solver of a 2 link robotic manipulator in a 2D Plane
+This project is a Kinematic solver of a 2 link robotic manipulator in a 2D Plane. To test the solver, run the file Plot2link.py. The link lengths are taken as user inputs. By default the project shows an interactive plot which takes 10 target coordinates as input for point to point motion of the manipulator.
 
 # two_link_planar.py 
 This file contains functions for calculating forward and inverse kinematics of the manipulator, it returns two posssible solution sets for each target.
