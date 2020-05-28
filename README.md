@@ -12,7 +12,7 @@ It contains functions to plot a circular trajectory or a eight shaped trajectory
 
 # Plot2link.py 
 It contains two sections:
-1. Plot the mechanism
+1. Plot the mechanism: 
 It simply shows the manipulator's end position in a non interactive plot
-2. Animate
+2. Animate: 
 It takes n number of target coordinates from the user and then shows an animated plot of the manipulator iterating through the targets. [Point to Point Motion] 
