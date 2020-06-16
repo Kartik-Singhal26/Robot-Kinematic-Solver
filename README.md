@@ -5,7 +5,7 @@ This project is a Kinematic solver of a 2 link robotic manipulator in a plane. T
 This file contains functions for calculating forward and inverse kinematics of the manipulator, it returns two posssible solution sets for each target.
 
 # PossibleConfiguration.py 
-This file returns a solution from the possible set by comparing the joint distance between two successive targets. The pose with minimum joint distance is returned.
+This file returns a solution from the possible set by comparing the joint distance between two successive targets. The pose with minimum joint displacement is returned.
 
 # Reference_Trajectory.py 
 It contains functions to plot a circular trajectory or a eight shaped trajectory
