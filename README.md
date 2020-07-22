@@ -19,6 +19,14 @@ To run the code select the code file with the intended application, i.e, Traject
 
 # Example
 
+## 3 Link Manipulator
+### 1. Point to Point Motion
+![] (p2p_gif.gif)
+### 2. Trajectory Tracking Motion
+![] (trajectory_gif.gif)
+
 ## 2 Link Manipulator
 ### 1. Point to Point Motion
-
+![] (2linkp2p.gif)
+### 2. Trajectory Tracking Motion
+![] (2linktt.gif)
