@@ -1,18 +1,24 @@
 # Kinematic-Solver
-This project is a Kinematic solver of a 2 link robotic manipulator in a plane. To test the solver, run the file Plot2link.py. The link lengths are taken as user inputs. By default the project shows an interactive plot which takes 10 target coordinates as input for point to point motion of the manipulator.
+This project is a Kinematic solver of planar robotic manipulators. Currently this has two models: A 2 Link Manipulator and a 3 Link Manipulator. I intend to commit few more models to this repository in the future.
 
-# two_link_planar.py 
-This file contains functions for calculating forward and inverse kinematics of the manipulator, it returns two posssible solution sets for each target.
+# Overview - 2 Link Manipulator
+The inverse kinematics of this manipulator are analytical. To address the issue of multiple solutions for a given pose the joint configuration with minimum displacement from the previous position is chosen.
 
-# PossibleConfiguration.py 
-This file returns a solution from the possible set by comparing the joint distance between two successive targets. The pose with minimum joint displacement is returned.
+# Overview - 3 Link Manipulator
+The inverse kinematics of this manipulator are based on Jacobians. An iterative solver is employed which checks for the reference position on the basis of increments and minimization of Eucledian Distance between the reference and actual position of end effector. Few parameters are included in the solver which impact the learning curve and ability of the solver to converge to feasible solution.
 
-# Reference_Trajectory.py 
-It contains functions to plot a circular trajectory or a eight shaped trajectory
+# Reference Tracking
+The manipulators are shown for two applications: 
+1. Reference Trajectory Tracking:
+    1. Circular Trajectory
+    1. Eight Shaped Trajectory
+1. Point to Point Motion.
 
-# Plot2link.py 
-It contains two sections:
-1. Plot the mechanism: 
-It simply shows the manipulator's end position in a non interactive plot
-2. Animate: 
-It takes n number of target coordinates from the user and then shows an animated plot of the manipulator iterating through the targets. [Point to Point Motion] 
+# Run
+To run the code select the code file with the intended application, i.e, Trajectory Tracking or Point to Point Motion. Adjust the tunable parameters (if required). The details about link lengths and trajectory are taken as user input.
+
+# Example
+
+## 2 Link Manipulator
+### 1. Point to Point Motion
+
